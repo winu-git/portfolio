@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+
+  <div class="intro-screen">
+    <div class="intro-text">
+      <h1>WINMANIRAJA B</h1>
+      <p>Cloud & DevOps Engineer</p>
+    </div>
+  </div>
+
   <header>
     <div class="logo">Welcome to my Portfolio</div>
     <nav>
@@ -110,7 +118,17 @@
       <a href="mailto:winmani2323@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       <a href="https://wa.me/9025873049" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
-    <p>&copy; 2025 WINMANIRAJA. All Rights Reserved.</p>
+    <p>&copy; Done by WINU </p>
   </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      const intro = document.querySelector('.intro-screen');
+      setTimeout(() => {
+        intro.classList.add('fade-out');
+      }, 500);
+    });
+  </script>
+
 </body>
 </html>
