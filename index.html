@@ -3,107 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of WINMANIRAJA B, Cloud & DevOps Engineer" />
-  <title>WINMANIRAJA B | Cloud & DevOps Engineer</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
+
   <div class="intro-screen">
     <div class="intro-text">
-      <h1>WINMANIRAJA B</h1>
-      <p>Cloud & DevOps Engineer</p>
+      <h1> Winmaniraja B</h1>
+      <p> Cloud & DevOps Engineer </p>
     </div>
   </div>
 
   <header>
-    <div class="logo">Welcome to my Portfolio</div>
+    <div class="logo">My Portfolio</div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+
   <section class="hero">
     <div class="hero-text">
-      <h1>Hi, I'm <span>WINMANIRAJA B</span></h1>
-      <p>Cloud & DevOps Engineer | AWS | DevOps | Python</p>
+      <h1>Hello, I'm <span> WINMANIRAJA B</span></h1>
+      <p> Cloud | DevOps Engineer </p>
       <a href="#contact" class="btn">Hire Me</a>
-      <a href="resume.pdf" class="btn" target="_blank">View Resume</a>
+      <a href="winmani-resume.pdf" class="btn" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
     </div>
     <div class="hero-img">
       <img src="images/your-photo.jpg" alt="Profile Picture" />
     </div>
   </section>
 
+
   <section class="section" id="about">
     <h2>About Me</h2>
     <p>
-      Enthusiastic IT graduate with hands-on experience in AWS cloud services and DevOps practices. Skilled in building cloud hosting applications and automating deployments. Seeking an entry-level role in a reputed organization to grow as a cloud and DevOps engineer.
+      Enthusiastic Cloud & DevOps Engineer with hands-on experience in AWS cloud services, DevOps practices, and CI/CD pipelines through projects and training. Skilled in deploying applications on AWS and automating workflows with Jenkins, Docker, Kubernetes. Certified in AWS-DevOps with strong knowledge of cloud infrastructure, eager to contribute to cloud/DevOps teams in an entry-level role.
     </p>
   </section>
 
-  <section class="section" id="skills">
+
+<section class="section" id="skills">
     <h2>Technical Skills</h2>
-    <div class="cards">
-      <div class="card bounce">
-        <h3>Programming Languages</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Python</li>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+        <ul class="skill-list">
+          <li><span class="label"> Compute Services -></span> EC2, Lambda, EKS, ECS Elastic Beanstalk </li>
+          <li><span class="label"> Storage Services -></span> S3, EBS, EFS </li>
+          <li><span class="label"> Networking       -></span> VPC, Route 53, CloudFront </li>
+          <li><span class="label"> Monitoring       -></span> CloudWatch, CloudTrial </li>
+          <li><span class="label"> Security         -></span> IAM, WAF, cognito </li>
+          <li><span class="label"> Database         -></span> Amazon RDS (MySQL), DynamoDB, Redshift, Amazon Aurora </li>
+          <li><span class="label"> Developer Tools  -></span> AWS CodeCommit, CodeBuild, Deploy, AWS CodePipeline </li>
         </ul>
       </div>
-      <div class="card bounce">
-        <h3>AWS Services</h3>
-        <ul>
-          <li>EC2, ELB, EKS, Lambda</li>
-          <li>S3, EBS, EFS</li>
-          <li>VPC, Route 53</li>
-          <li>RDS, DynamoDB</li>
+      
+  
+      <div class="skill-box">
+        <div class="skill-icon devops-wrapper">
+          <span class="devops-icon">∞</span>
+          <span class="devops-text">DevOps</span>
+        </div>
+        <ul class="skill-list">
+          <li><span class="label"> DevOps Tools                      -></span> Git, GitHub, Jenkins, Maven, Ansible, Terraform, CI/CD, AWS CodeBuild, CodePipeline </li>
+          <li><span class="label"> Containerization & Orchestration  -></span> Jenkins, Maven </li>
+          <li><span class="label"> Programming & Scripting           -></span> Docker, Kubernetes </li>
+          <li><span class="label"> Operating Systems                 -></span> CI/CD Pipeline </li>
         </ul>
       </div>
-      <div class="card bounce">
-        <h3>DevOps Tools</h3>
-        <ul>
-          <li>Git, GitHub</li>
-          <li>Maven, AWS CodeBuild</li>
-          <li>Jenkins, CodePipeline</li>
-          <li>Docker, Kubernetes, EKS</li>
-        </ul>
+    </section>
+
+<section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+        <h3> Three-Tier Movie Booking Website on AWS </h3>
+        <p> Deployed a 3-tier architecture on AWS using EC2,  RDS, and VPC and Configured IAM, Security Groups and Route53 for secure access and Implemented ELB + AutoScaling to ensure availability and SES for Email conformation. </p>
+        <div class="tags">
+          <span> EC2 </span>
+          <span> VPC </span>
+          <span> RDS </span> 
+          <span> SES </span>
+          <span> ELB </span>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-stream"></i></div>
+        <h3> Serverless AI Chatbot using AWS Lambda & S3 </h3>
+        <p> Built serverless Chatbot hosted on S3 with backend logic in AS Lambda, Enabled monitoring with CloudWatch (reduced downtime) and Used API Gateway for API integration and DynamoDB for persistent data storage </p>
+        <div class="tags">
+          <span> Lambda </span>
+          <span> S3 </span>
+          <span> API Gateway </span>
+          <span> DynamoDB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="section" id="experience">
+    <h2> Training & Education </h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3> AWS - DEVOPS </h3>
+          <p> Hands-on experience in AWS core services (EC2, S3, IAM, VPC, RDS) and DevOps practices including Jenkins CI/CD pipeline, automation using Ansible, and containerized deployments using Docker & Kubernetes.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3> BSc Information Technology </h3>
+          <p> Completed My Under Graduate at Dr. N.G.P Arts and Science College specialized in Information Technology </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+
+  <section class="section" id="certifications">
+    <h2>Certifications</h2>
     <div class="cards">
-      <div class="card bounce">
-        <h3>Movie Booking Application</h3>
-        <p>
-          Developed a full-stack movie booking web application using React, Node.js, MySQL, and AWS used services (VPC, EC2, S3, IAM, CloudFront, SES). Includes booking page and email confirmation.
-        </p>
+      <div class="card">
+        <h3> AWS-DevOps </h3>
+        <p> Certified in AWS-DevOps Issued by FITA Academy </p>
       </div>
-      <div class="card bounce">
-        <h3>Rainfall Prediction System</h3>
-        <p>
-          Machine learning-based project using XGBoost to predict rainfall from historical meteorological data with accuracy reporting.
-        </p>
-      </div>
-    </div>
   </section>
+
 
   <section class="section" id="contact">
     <h2>Contact Me</h2>
-    <form action="https://formsubmit.co/winmani2323@gmail.com" method="POST">
+    <form action="#" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
@@ -111,24 +158,33 @@
     </form>
   </section>
 
+
   <footer>
     <div class="social-icons">
-      <a href="https://github.com/winu-git" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/winmaniraja-b-0a573b269" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:winmani2323@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/9025873049" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=winmani2323@gmail.com&su=Portfolio%20Contact&body=Hello%20Winmani," 
+   target="_blank" title="Email">
+  <i class="fa-regular fa-envelope"></i>
+</a>
+
+      <a href="https://github.com/winu-git" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/winmaniraja-b-0a573b269" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
     </div>
-    <p>&copy; Done by WINU </p>
+    <p>© Winmaniraja. All Rights Reserved.</p>
   </footer>
+  
+
 
   <script>
     window.addEventListener('load', () => {
       const intro = document.querySelector('.intro-screen');
       setTimeout(() => {
         intro.classList.add('fade-out');
-      }, 500);
+      }, 700);
     });
   </script>
-
 </body>
 </html>
