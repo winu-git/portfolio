@@ -3,187 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title> Winu Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
-
-
-  <div class="intro-screen">
-    <div class="intro-text">
-      <h1> Winmaniraja B</h1>
-      <p> Cloud & DevOps Engineer </p>
-    </div>
-  </div>
-
-  <header>
-    <div class="logo">My Portfolio</div>
+<header>
+    <div class="logo"> Winu Portfolio</div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#tech-stack">Tech stack</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Education</a></li>
+        <li><a href="#training">Training</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+    </header>
 
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hello, I'm <span> WINMANIRAJA B</span></h1>
-      <p> Cloud | DevOps Engineer </p>
-      <a href="#contact" class="btn">Hire Me</a>
-      <a href="winmani-resume.pdf" class="btn" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
-    </div>
-    <div class="hero-img">
-      <img src="images/your-photo.jpg" alt="Profile Picture" />
-    </div>
-  </section>
-
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span class="typing-name">Winmaniraja B</span></h1>
+    <p>Cloud | DevOps Engineer</p>
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="winmani-resume.pdf" class="btn" target="_blank">
+      <i class="fas fa-file-alt"></i> Resume
+    </a>
+  </div>
+  <div class="hero-img">
+    <img src="images/winu.png" alt="Profile Picture" />
+  </div>
+</section>
 
   <section class="section" id="about">
     <h2>About Me</h2>
     <p>
-      Enthusiastic Cloud & DevOps Engineer with hands-on experience in AWS cloud services, DevOps practices, and CI/CD pipelines through projects and training. Skilled in deploying applications on AWS and automating workflows with Jenkins, Docker, Kubernetes. Certified in AWS-DevOps with strong knowledge of cloud infrastructure, eager to contribute to cloud/DevOps teams in an entry-level role.
+      Dynamic Cloud & DevOps Engineer skilled in AWS, CI/CD, Docker, Kubernetes, Terraform, and Ansible.
+Experienced in deploying scalable cloud architectures and automating workflows to improve efficiency and
+reliability. Passionate about cloud automation, Infrastructure as Code (IaC), and continuous integration —
+driven to deliver secure, optimized, and innovative DevOps solutions.
     </p>
   </section>
 
+<!-- ✅ TECH STACK SECTION -->
+<section class="section" id="tech-stack">
+  <h2>Tech Stack</h2>
+  <div class="tech-grid">
+    <img src="images/aws.png" alt="AWS">
+    <img src="images/docker.png" alt="Docker">
+    <img src="images/kubernetes.png" alt="Kubernetes">
+    <img src="images/Jenkins.png" alt="Jenkins">
+    <img src="images/Maven.png" alt="Maven">
+    <img src="images/git.png" alt="Git">
+    <img src="images/github.png" alt="GitHub">
+    <img src="images/Prometheus.png" alt="Prometheus">
+    <img src="images/Linux.png" alt="Linux">
+    <img src="images/Grafana.png" alt="Grafana">
+    <img src="images/Terraform.png" alt="Terraform">
+    <img src="images/CI-CD.png" alt="CI-CD">
+    <img src="images/html.png" alt="HTML5">
+    <img src="images/css.png" alt="CSS3">
+  </div>
+</section>
 
-<section class="section" id="skills">
+  <section class="section" id="skills">
     <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="skill-box">
         <div class="skill-icon"><i class="fab fa-aws"></i></div>
         <ul class="skill-list">
-          <li><span class="label"> Compute Services -></span> EC2, Lambda, EKS, ECS Elastic Beanstalk </li>
-          <li><span class="label"> Storage Services -></span> S3, EBS, EFS </li>
-          <li><span class="label"> Networking       -></span> VPC, Route 53, CloudFront </li>
-          <li><span class="label"> Monitoring       -></span> CloudWatch, CloudTrial </li>
-          <li><span class="label"> Security         -></span> IAM, WAF, cognito </li>
-          <li><span class="label"> Database         -></span> Amazon RDS (MySQL), DynamoDB, Redshift, Amazon Aurora </li>
-          <li><span class="label"> Developer Tools  -></span> AWS CodeCommit, CodeBuild, Deploy, AWS CodePipeline </li>
+          <li><span class="label">Compute:</span> EC2, Lambda, EKS </li>
+          <li><span class="label">storage:</span> S3, EBS, EFS, Glacier </li>
+          <li><span class="label">Networking:</span> VPC, Route 53, CloudFront </li>
+          <li><span class="label">Database:</span> RDS (MySQL), DynamoDB, Aurora </li>
         </ul>
       </div>
-      
-  
+
       <div class="skill-box">
         <div class="skill-icon devops-wrapper">
           <span class="devops-icon">∞</span>
           <span class="devops-text">DevOps</span>
         </div>
         <ul class="skill-list">
-          <li><span class="label"> DevOps Tools                      -></span> Git, GitHub, Jenkins, Maven, Ansible, Terraform, CI/CD, AWS CodeBuild, CodePipeline </li>
-          <li><span class="label"> Containerization & Orchestration  -></span> Jenkins, Maven </li>
-          <li><span class="label"> Programming & Scripting           -></span> Docker, Kubernetes </li>
-          <li><span class="label"> Operating Systems                 -></span> CI/CD Pipeline </li>
+          <li><span class="label">Tools:</span> Git, Jenkins, Ansible, Terraform </li>
+          <li><span class="label">Containers:</span> Docker, Kubernetes </li>
+          <li><span class="label">Infrastructure:</span> Ansible, Terraform </li>
+          <li><span class="label">CI/CD:</span> Jenkins, GitHub </li>
         </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-<section class="section" id="projects">
+  <section class="section" id="projects">
     <h2>Projects</h2>
-    <div class="project-grid">
+    <div class="projects-container">
       <div class="project-card">
-        <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
-        <h3> Three-Tier Movie Booking Website on AWS </h3>
-        <p> Deployed a 3-tier architecture on AWS using EC2,  RDS, and VPC and Configured IAM, Security Groups and Route53 for secure access and Implemented ELB + AutoScaling to ensure availability and SES for Email conformation. </p>
-        <div class="tags">
-          <span> EC2 </span>
-          <span> VPC </span>
-          <span> RDS </span> 
-          <span> SES </span>
-          <span> ELB </span>
+        <div class="project-img">
+          <img src="images/travel-project.png" alt="Three-Tier Movie Booking Website">
+        </div>
+        <div class="project-content">
+          <h3>Three-Tier Movie Booking Website</h3>
+          <p>
+            Deployed a 3-tier architecture using EC2, RDS, and VPC for secure, scalable deployment,
+            Configured IAM, Security Groups for access control and system protection,
+            Integrated AWS SES for automated email confirmations.
+          </p>
+          <a href="https://github.com/winu-git/3-tier-travel-website.git" target="_blank" class="btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
         </div>
       </div>
   
       <div class="project-card">
-        <div class="project-icon"><i class="fas fa-stream"></i></div>
-        <h3> Serverless AI Chatbot using AWS Lambda & S3 </h3>
-        <p> Built serverless Chatbot hosted on S3 with backend logic in AS Lambda, Enabled monitoring with CloudWatch (reduced downtime) and Used API Gateway for API integration and DynamoDB for persistent data storage </p>
-        <div class="tags">
-          <span> Lambda </span>
-          <span> S3 </span>
-          <span> API Gateway </span>
-          <span> DynamoDB</span>
+        <div class="project-img">
+          <img src="images/winuAI.png" alt="AI Chatbot">
+        </div>
+        <div class="project-content">
+          <h3>AI Chatbot with Disaster Recovery on AWS</h3>
+          <p>
+            Built a AI-powered chatbot with disaster recovery architecture to ensure data reliablity,
+            Deployed in EC2, VPC, RDS across multiple AWS regions for high availability.
+          </p>
+          <a href="https://github.com/winu-git/WinuAI-Bot.git" target="_blank" class="btn">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
         </div>
       </div>
     </div>
   </section>
   
-  
-  <section class="section" id="experience">
-    <h2> Training & Education </h2>
+  <section class="section" id="training">
+    <h2>Training & Education</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-content">
-          <h3> AWS - DEVOPS </h3>
-          <p> Hands-on experience in AWS core services (EC2, S3, IAM, VPC, RDS) and DevOps practices including Jenkins CI/CD pipeline, automation using Ansible, and containerized deployments using Docker & Kubernetes.</p>
+          <h3>AWS - DEVOPS</h3>
+          <p>Gained hands-on experience with AWS services and automation using Jenkins, Ansible, Docker & Kubernetes.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-content">
-          <h3> BSc Information Technology </h3>
-          <p> Completed My Under Graduate at Dr. N.G.P Arts and Science College specialized in Information Technology </p>
+          <h3>B.Sc Information Technology</h3>
+          <p>Dr. N.G.P Arts and Science College, Coimabtore | 2022-2025 </p>
         </div>
       </div>
     </div>
   </section>
-
 
   <section class="section" id="certifications">
     <h2>Certifications</h2>
     <div class="cards">
       <div class="card">
-        <h3> AWS-DevOps </h3>
-        <p> Certified in AWS-DevOps Issued by FITA Academy </p>
+        <h3>AWS-DevOps</h3>
+        <p>Certified in AWS-DevOps Issued by FITA Academy | 2025 </p>
       </div>
+    </div>
   </section>
-
 
   <section class="section" id="contact">
     <h2>Contact Me</h2>
-    <form action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <form action="https://formspree.io/f/mldadazn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        alert("✅ Message sent successfully!");
+        form.reset();
+      } else {
+        alert("❌ There was an error sending your message. Please try again.");
+      }
+    });
+  </script>
 
   <footer>
     <div class="social-icons">
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=winmani2323@gmail.com&su=Portfolio%20Contact&body=Hello%20Winmani," 
-   target="_blank" title="Email">
-  <i class="fa-regular fa-envelope"></i>
-</a>
-
-      <a href="https://github.com/winu-git" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
+      <a href="https://mail.google.com/mail/?view=cm&to=winmani2323@gmail.com" target="blank">
+        <i class="fa-regular fa-envelope"></i>
       </a>
-      <a href="https://www.linkedin.com/in/winmaniraja-b-0a573b269" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
+      <a href="https://github.com/winu-git" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/winmaniraja" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
     <p>© Winmaniraja. All Rights Reserved.</p>
   </footer>
-  
-
 
   <script>
+    // Intro fade-out
     window.addEventListener('load', () => {
       const intro = document.querySelector('.intro-screen');
       setTimeout(() => {
         intro.classList.add('fade-out');
       }, 700);
+    });
+  </script>
+
+  <script>
+    // Disable scroll while intro is showing
+    document.body.classList.add("intro-active");
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.querySelector(".intro-screen").classList.add("fade-out");
+        document.body.classList.remove("intro-active"); // ✅ scrolling resumes
+      }, 2000); // match your intro fade-out duration
     });
   </script>
 </body>
