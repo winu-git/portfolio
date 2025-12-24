@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Winu Portfolio</title>
+  <link rel="icon" type="images/jpg" href="images/aws-logo.png">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +12,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Loading Intro -->
+<div class="intro-screen" id="intro">
+  <div class="loader-wrapper">
+    <div class="loader-text">INITIALIZING PROFILE...</div>
+    <div class="progress-bar">
+      <span class="progress"></span>
+    </div>
+  </div>
+</div>
+
 <header>
-    <div class="logo"> Winu Portfolio</div>
+    <div class="logo"> 
+      <i class="fas fa-cloud"></i>
+      <span> Winu Portfolio </span>
+      </div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -26,10 +41,9 @@
     </nav>
     </header>
 
-<!-- Hero Section -->
 <section class="hero">
   <div class="hero-text">
-    <h1>Hello, I'm <span class="typing-name">Winmaniraja B</span></h1>
+    <h1>Hello, I'm <span class="typing-name"></span></h1>
     <p>Cloud | DevOps Engineer</p>
     <a href="#contact" class="btn">Hire Me</a>
     <a href="winmani-resume.pdf" class="btn" target="_blank">
@@ -41,7 +55,7 @@
   </div>
 </section>
 
-  <section class="section" id="about">
+  <section class="section fade-in" id="about">
     <h2>About Me</h2>
     <p>
       Dynamic Cloud & DevOps Engineer skilled in AWS, CI/CD, Docker, Kubernetes, Terraform, and Ansible.
@@ -51,15 +65,14 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
     </p>
   </section>
 
-<!-- ✅ TECH STACK SECTION -->
-<section class="section" id="tech-stack">
+<section class="section fade-in show" id="tech-stack">
   <h2>Tech Stack</h2>
   <div class="tech-grid">
     <img src="images/aws.png" alt="AWS">
     <img src="images/docker.png" alt="Docker">
     <img src="images/Kubernetes.png" alt="Kubernetes">
     <img src="images/Jenkins.png" alt="Jenkins">
-    <img src="images/Maven.png" alt="Maven">
+    <img src="images/maven.png" alt="Maven">
     <img src="images/git.png" alt="Git">
     <img src="images/github.png" alt="GitHub">
     <img src="images/Prometheus.png" alt="Prometheus">
@@ -72,7 +85,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
   </div>
 </section>
 
-  <section class="section" id="skills">
+  <section class="section fade-in" id="skills">
     <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div class="skill-box">
@@ -100,10 +113,10 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
     </div>
   </section>
 
-  <section class="section" id="projects">
+  <section class="section fade-in" id="projects">
     <h2>Projects</h2>
     <div class="projects-container">
-      <div class="project-card">
+      <div class="project-card fade-in">
         <div class="project-img">
           <img src="images/travel-project.png" alt="Three-Tier Movie Booking Website">
         </div>
@@ -120,7 +133,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
         </div>
       </div>
   
-      <div class="project-card">
+      <div class="project-card fade-in">
         <div class="project-img">
           <img src="images/winuAI.png" alt="AI Chatbot">
         </div>
@@ -138,7 +151,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
     </div>
   </section>
   
-  <section class="section" id="training">
+  <section class="section fade-in" id="training">
     <h2>Training & Education</h2>
     <div class="timeline">
       <div class="timeline-item">
@@ -156,7 +169,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
     </div>
   </section>
 
-  <section class="section" id="certifications">
+  <section class="section fade-in" id="certifications">
     <h2>Certifications</h2>
     <div class="cards">
       <div class="card">
@@ -166,7 +179,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <section class="section fade-in" id="contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mldadazn" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
@@ -176,21 +189,36 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
     </form>
   </section>
 
+  <div class="success-animation" id="successAnimation">
+    <div class="cloud">
+      <i class="fas fa-cloud"></i>
+      <span class="check">
+        <i class="fas fa-check"></i>
+      </span>
+    </div>
+    <p>Message Sent Successfully</p>
+  </div>
+
   <script>
     const form = document.querySelector("form");
+    const successBox = document.getElementById("successAnimation");
+  
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+  
       const data = new FormData(form);
       const response = await fetch(form.action, {
         method: form.method,
         body: data,
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: "application/json" }
       });
+  
       if (response.ok) {
-        alert("✅ Message sent successfully!");
+        form.style.display = "none";
+        successBox.style.display = "flex";
         form.reset();
       } else {
-        alert("❌ There was an error sending your message. Please try again.");
+        alert("❌ Something went wrong. Please try again.");
       }
     });
   </script>
@@ -207,24 +235,98 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
   </footer>
 
   <script>
-    // Intro fade-out
-    window.addEventListener('load', () => {
-      const intro = document.querySelector('.intro-screen');
+    const fadeElements = document.querySelectorAll('.fade-in');
+  
+    const fadeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      },
+      { 
+        threshold: 0,
+        rootmargin: "0px 0px -150px 0px"
+      }
+    );
+  
+    fadeElements.forEach(el => fadeObserver.observe(el));
+  </script>
+
+  <script>
+    document.body.style.overflow = "hidden";
+  
+    window.addEventListener("load", () => {
+      const intro = document.getElementById("intro");
+  
       setTimeout(() => {
-        intro.classList.add('fade-out');
-      }, 700);
+        intro.classList.add("fade-out");
+        document.body.style.overflow = "";
+      }, 2800); // matches progress duration
     });
   </script>
 
   <script>
-    // Disable scroll while intro is showing
-    document.body.classList.add("intro-active");
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        document.querySelector(".intro-screen").classList.add("fade-out");
-        document.body.classList.remove("intro-active"); // ✅ scrolling resumes
-      }, 2000); // match your intro fade-out duration
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+  
+    window.addEventListener("scroll", () => {
+      let current = "";
+  
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+  
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
     });
+  </script>
+
+  <script>
+    const text = "Winmaniraja B";
+    const typingSpeed = 120;
+    const deletingSpeed = 80;
+    const delayAfterTyping = 1200;
+  
+    let index = 0;
+    let isDeleting = false;
+  
+    const typingElement = document.querySelector(".typing-name");
+  
+    function typeLoop() {
+      if (!isDeleting) {
+        // Typing
+        typingElement.textContent = text.substring(0, index + 1);
+        index++;
+  
+        if (index === text.length) {
+          setTimeout(() => isDeleting = true, delayAfterTyping);
+        }
+      } else {
+        // Deleting
+        typingElement.textContent = text.substring(0, index - 1);
+        index--;
+  
+        if (index === 0) {
+          isDeleting = false;
+        }
+      }
+  
+      setTimeout(
+        typeLoop,
+        isDeleting ? deletingSpeed : typingSpeed
+      );
+    }
+  
+    window.addEventListener("load", typeLoop);
   </script>
 </body>
 </html>
