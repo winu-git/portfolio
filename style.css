@@ -56,7 +56,7 @@ html {
   width: 0%;
   background: #00b4ff;
   box-shadow: 0 0 10px #00b4ff;
-  animation: loadProgress 2.5s ease forwards;
+  animation: loadProgress 1.5s ease forwards;
 }
 
 /* Progress animation */
@@ -177,6 +177,21 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
+#about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about p {
+  max-width: 850px;
+  margin-top: 1rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #ddd;
+}
+
 .section::before,
 .section::after {
   content: none;
@@ -184,9 +199,22 @@ nav ul li a:hover {
 
 .section h2 {
   color: #00b4ff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #00b4ff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 4px;
+  box-shadow: 0 0 12px #00b4ff;
 }
 
 /* Buttons */
@@ -213,13 +241,14 @@ nav ul li a:hover {
 .project-card,
 .skill-box,
 .timeline-item {
-  background: rgba(0, 0, 0, 0.85);
-  border: 2px solid #00b4ff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(0, 180, 255, 0.3);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  background: rgba(15, 15, 15, 0.9);;
+  border: 1px solid rgba(0, 180, 255, 0.4);
+  border-radius: 16px;
+  padding: 1.8rem;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
 .card:hover,
@@ -242,19 +271,21 @@ nav ul li a:hover {
 .project-card {
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.85);
-  border: 2px solid #00b4ff;
-  border-radius: 12px;
-  padding: 1.2rem;
+  background: rgba(15, 15, 15, 0.9);
+  border: 1px solid rgba(0, 180, 255, 0.4);
+  border-radius: 16px;
+  padding: 1.8rem;
   max-width: 450px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 180, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.15);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 0 20px rgba(0, 180, 255, 0.6);
-  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.6);
+  transform: translateY(-6px);
+  border-color: #00b4ff;
 }
 
 .project-img img {
@@ -613,7 +644,7 @@ nav ul li a.active {
   font-size: 1.5rem;
   color: #00b4ff;
   font-weight: bold;
-}s
+}
 
 .logo i {
   font-size: 1.6rem;
@@ -717,4 +748,66 @@ nav ul li a.active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.badge-img {
+  width: 120px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.badge-img:hover {
+  transform: scale(1.1);
+}
+
+/* Certificate Section – No Box */
+.cert-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cert-badge img {
+  width: 180px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cert-badge img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 20px #00b4ff);
+}
+
+/* Remove box and show only certificate image */
+#certifications .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.certificate-image img {
+  width: 200px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.certificate-image img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 20px #00b4ff);
+}
+
+#certifications {
+  text-align: center;
+}
+
+#certifications img {
+  display: block;
+  margin: 2rem auto;
+  width: 200px;   /* You can adjust size */
 }
