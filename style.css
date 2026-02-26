@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* HTML & Body Fixes */
 html, body {
   width: 100%;
   max-width: 100%;
@@ -17,7 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 🔐 Cyber Loading Screen */
 .intro-screen {
   position: fixed;
   inset: 0;
@@ -41,7 +39,6 @@ html {
   text-shadow: 0 0 8px #00b4ff;
 }
 
-/* Progress bar */
 .progress-bar {
   width: 260px;
   height: 3px;
@@ -59,21 +56,18 @@ html {
   animation: loadProgress 1.5s ease forwards;
 }
 
-/* Progress animation */
 @keyframes loadProgress {
   to {
     width: 100%;
   }
 }
 
-/* Fade out */
 .intro-screen.fade-out {
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s ease, visibility 1s ease;
 }
 
-/* Fixed Background */
 body {
   margin: 0;
   color: #fff;
@@ -82,7 +76,6 @@ body {
   line-height: 1.6;
 }
 
-/* ✅ Header */
 header {
   width: 100%;
   display: flex;
@@ -125,7 +118,6 @@ nav ul li a:hover {
   text-shadow: 0 0 8px #00b4ff, 0 0 16px #00b4ff, 0 0 24px #00b4ff;
 }
 
-/* Hero */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +160,6 @@ nav ul li a:hover {
   border: 4px solid #00b4ff;
 }
 
-/* Sections */
 .section {
   position: relative;
   padding: 5rem 2rem;
@@ -217,7 +208,6 @@ nav ul li a:hover {
   box-shadow: 0 0 12px #00b4ff;
 }
 
-/* Buttons */
 .btn {
   background: transparent;
   color: #00b4ff;
@@ -236,7 +226,6 @@ nav ul li a:hover {
   color: #000;
 }
 
-/* Cards, projects, skills (stable hover) */
 .card,
 .project-card,
 .skill-box,
@@ -256,10 +245,9 @@ nav ul li a:hover {
 .skill-box:hover,
 .timeline-item:hover {
   box-shadow: 0 0 20px rgba(0, 180, 255, 0.6);
-  transform: none; /* Remove jumping */
+  transform: none;
 }
 
-/* Projects Section */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
@@ -322,14 +310,12 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
 }
 
-/* Technical Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -391,7 +377,6 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-/* Tech Grid Logos */
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -419,7 +404,6 @@ nav ul li a:hover {
   filter: drop-shadow(0 0 10px #00b4ff) drop-shadow(0 0 20px #00b4ff);
 }
 
-/* Training & Education */
 .timeline {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -432,7 +416,6 @@ nav ul li a:hover {
   text-align: left;
 }
 
-/* Certifications */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -445,7 +428,6 @@ nav ul li a:hover {
   text-align: left;
 }
 
-/* Footer */
 footer {
   padding: 2rem;
   background: #000;
@@ -468,7 +450,6 @@ footer {
   text-shadow: 0 0 10px #00b4ff, 0 0 20px #00b4ff, 0 0 40px #00b4ff;
 }
 
-/* Forms */
 form {
   display: flex;
   flex-direction: column;
@@ -498,7 +479,6 @@ form button {
   align-self: center;
 }
 
-/* 📱 Mobile View */
 @media (max-width: 768px) {
 
   header {
@@ -556,7 +536,6 @@ form button {
   }
 }
 
-/* 💻 Tablet View */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero {
     flex-direction: row;
@@ -581,10 +560,9 @@ form button {
   }
 }
 
-/* Fix underline in "View on GitHub" buttons */
 .btn,
 .btn:visited {
-  text-decoration: none; /* Removes the underline completely */
+  text-decoration: none;
   color: #00b4ff;
 }
 
@@ -595,7 +573,6 @@ form button {
   box-shadow: 0 0 10px #00b4ff, 0 0 20px #00b4ff;
 }
 
-/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -662,7 +639,6 @@ nav ul li a.active {
   animation: cloudGlow 2s infinite;
 }
 
-/* Success Container */
 .success-animation {
   display: none;
   flex-direction: column;
@@ -672,7 +648,6 @@ nav ul li a.active {
   animation: fadeIn 0.6s ease forwards;
 }
 
-/* Message text */
 .success-animation p {
   margin-top: 1.2rem;
   color: #00ff88;
@@ -681,7 +656,6 @@ nav ul li a.active {
   letter-spacing: 0.5px;
 }
 
-/* Cloud wrapper */
 .cloud {
   position: relative;
   font-size: 5rem;
@@ -690,7 +664,6 @@ nav ul li a.active {
   animation: floatCloud 3s ease-in-out infinite;
 }
 
-/* Green tick bubble */
 .check {
   position: absolute;
   bottom: 8px;
@@ -712,7 +685,6 @@ nav ul li a.active {
   animation-delay: 0.6s;
 }
 
-/* Animations */
 @keyframes tickPop {
   0% {
     transform: scale(0);
@@ -761,7 +733,6 @@ nav ul li a.active {
   transform: scale(1.1);
 }
 
-/* Certificate Section – No Box */
 .cert-badge {
   display: flex;
   justify-content: center;
@@ -779,7 +750,6 @@ nav ul li a.active {
   filter: drop-shadow(0 0 20px #00b4ff);
 }
 
-/* Remove box and show only certificate image */
 #certifications .cards {
   display: flex;
   justify-content: center;
@@ -809,5 +779,5 @@ nav ul li a.active {
 #certifications img {
   display: block;
   margin: 2rem auto;
-  width: 200px;   /* You can adjust size */
+  width: 200px;
 }

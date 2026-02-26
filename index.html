@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- Loading Intro -->
 <div class="intro-screen" id="intro">
   <div class="loader-wrapper">
     <div class="loader-text">INITIALIZING PROFILE...</div>
@@ -44,8 +43,9 @@
 <section class="hero">
   <div class="hero-text">
     <h1>Hello, I'm <span class="typing-name"></span></h1>
-    <p>Cloud | DevOps Engineer</p>
-    <a href="#contact" class="btn">Hire Me</a>
+    <p>AWS Certified Cloud | DevOps Engineer</p>
+    <p> "Building Scalable & Reliable Cloud Solutions" </p>
+    <a href="#contact" class="btn"> Get in Touch </a>
     <a href="winmani-resume.pdf" class="btn" target="_blank">
       <i class="fas fa-file-alt"></i> Resume
     </a>
@@ -56,17 +56,15 @@
 </section>
 
   <section class="section fade-in" id="about">
-    <h2>About Me</h2>
+    <h2>ABOUT ME</h2>
     <p>
-      Dynamic Cloud & DevOps Engineer skilled in AWS, CI/CD, Docker, Kubernetes, Terraform, and Ansible.
-Experienced in deploying scalable cloud architectures and automating workflows to improve efficiency and
-reliability. Passionate about cloud automation, Infrastructure as Code (IaC), and continuous integration —
-driven to deliver secure, optimized, and innovative DevOps solutions.
+    AWS Certified Cloud Practitioner and aspiring Cloud & DevOps Engineer with hands-on experience in AWS services, Docker, Kubernetes, and Infrastructure as Code. Strong foundation in cloud architecture, automation, 
+and deployment strategies through academic projects and hands-on training. Passionate about building scalable, secure, and efficient cloud solutions.
     </p>
   </section>
 
 <section class="section fade-in show" id="tech-stack">
-  <h2>Tech Stack</h2>
+  <h2>TECH STACK</h2>
   <div class="tech-grid">
     <img src="images/aws.png" alt="AWS">
     <img src="images/docker.png" alt="Docker">
@@ -86,7 +84,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
 </section>
 
   <section class="section fade-in" id="skills">
-    <h2>Technical Skills</h2>
+    <h2>TECHNICAL SKILLS</h2>
     <div class="skills-grid">
       <div class="skill-box">
         <div class="skill-icon"><i class="fab fa-aws"></i></div>
@@ -114,7 +112,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
   </section>
 
   <section class="section fade-in" id="projects">
-    <h2>Projects</h2>
+    <h2>PROJECTS</h2>
     <div class="projects-container">
       <div class="project-card fade-in">
         <div class="project-img">
@@ -152,7 +150,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
   </section>
   
   <section class="section fade-in" id="training">
-    <h2>Training & Education</h2>
+    <h2>TRAINING & EDUCATION</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-content">
@@ -170,14 +168,14 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
   </section>
 
   <section class="section fade-in" id="certifications">
-    <h2>Certifications</h2>
+    <h2>CERTIFICATIONS</h2>
       <div class="certificate-image">
       <img src="images/aws-badge.png" alt="AWS Cloud Practitioner Badge" class="badge-img">
     </div>
   </section>
 
   <section class="section fade-in" id="contact">
-    <h2>Contact Me</h2>
+    <h2>CONTACT ME</h2>
     <form action="https://formspree.io/f/mldadazn" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -228,7 +226,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
       <a href="https://github.com/winu-git" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/winmaniraja" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    <p>© Winmaniraja. All Rights Reserved.</p>
+    <p>© Designed & Built by Winu.</p>
   </footer>
 
   <script>
@@ -260,7 +258,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
       setTimeout(() => {
         intro.classList.add("fade-out");
         document.body.style.overflow = "";
-      }, 1500); // matches progress duration
+      }, 1500);
     });
   </script>
 
@@ -300,7 +298,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
   
     function typeLoop() {
       if (!isDeleting) {
-        // Typing
+        
         typingElement.textContent = text.substring(0, index + 1);
         index++;
   
@@ -308,7 +306,7 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
           setTimeout(() => isDeleting = true, delayAfterTyping);
         }
       } else {
-        // Deleting
+        
         typingElement.textContent = text.substring(0, index - 1);
         index--;
   
@@ -322,7 +320,6 @@ driven to deliver secure, optimized, and innovative DevOps solutions.
         isDeleting ? deletingSpeed : typingSpeed
       );
     }
-  
     window.addEventListener("load", typeLoop);
   </script>
 </body>
